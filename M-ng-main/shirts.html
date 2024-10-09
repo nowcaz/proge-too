@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluusid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>- Pluusid -</h1>
+        <div class="icon-cart" onclick="toggleCart()">
+            <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Ostukorv">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main class="listProduct">
+        <div class="product item">
+            <h2>One Star Pro Ox</h2>
+            <img src="images/1.png" alt="One Star Pro Ox" class="product-image">
+            <p>Hind: 129€</p>
+            <label for="size1">Vali suurus:</label>
+            <select id="size1">
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+            </select>
+            <button class="addCart" onclick="addToCart('One Star Pro Ox', 129, 'size1')">Lisa korvi</button>
+        </div>
+        
+        <div class="product item">
+            <h2>Classic Sneakers</h2>
+            <img src="images/2.png" alt="Classic Sneakers" class="product-image">
+            <p>Hind: 99€</p>
+            <label for="size2">Vali suurus:</label>
+            <select id="size2">
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+            </select>
+            <button class="addCart" onclick="addToCart('Classic Sneakers', 99, 'size2')">Lisa korvi</button>
+        </div>
+
+        <div class="product item">
+            <h2>Sporty Runners</h2>
+            <img src="images/3.png" alt="Sporty Runners" class="product-image">
+            <p>Hind: 89€</p>
+            <label for="size3">Vali suurus:</label>
+            <select id="size3">
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+            </select>
+            <button class="addCart" onclick="addToCart('Sporty Runners', 89, 'size3')">Lisa korvi</button>
+        </div>
+
+    </main>
+
+    <aside class="cartTab" id="cart">
+        <h1>Ostukorv</h1>
+        <div class="listCart" id="cart-items"></div>
+        <div class="btn">
+            <button class="close" onclick="toggleCart()">Sulge</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
