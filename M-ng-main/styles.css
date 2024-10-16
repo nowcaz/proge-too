@@ -25,7 +25,7 @@ h3 {
 }
 
 h1 {
-    margin-left: 45%;
+    margin-left: 47%;
     font-size: 30px;
 }
 
@@ -105,6 +105,7 @@ header {
     padding: 20px;
 }
 
+
 .product {
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -168,3 +169,21 @@ header {
     max-width: 800px;
 }
 
+
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
