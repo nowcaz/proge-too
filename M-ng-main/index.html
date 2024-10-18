@@ -42,5 +42,31 @@
         </div>
     </section>
 
+    <div class="cartTab">
+        <div class="listCart">
+            <h3>Your Cart</h3>
+            <p>No items in the cart.</p>
+            <button class="close" onclick="toggleCart()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        let cartCount = 0;
+
+        function toggleCart() {
+            const cartTab = document.querySelector('.cartTab');
+            cartTab.classList.toggle('open');
+        }
+
+        function addToCart() {
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+        }
+
+        const buttons = document.querySelectorAll('.image-button');
+        buttons.forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+    </script>
 </body>
 </html>
