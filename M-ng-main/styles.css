@@ -6,16 +6,16 @@
     --border-color: #ccc;
     --padding: 5px; 
 }
-
 body {
     font-family: Slim-Joe;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
+    overflow-y: auto;
     animation: backgroundAnimation 20s ease infinite; 
     background: linear-gradient(270deg, #8B0000, #000000, #4B0000, #ffffff);
     background-size: 400% 400%; 
 }
+
 
 @keyframes backgroundAnimation {
     0% {
@@ -199,4 +199,66 @@ header {
 .back-button:hover {
     background-color: #e0e0e0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#country-select {
+    margin-top: 20px;
+    padding: 7px;
+    font-size: 13px;
+    width: 250px;
+    max-height: 150px;
+    overflow-y: auto; 
+    border: 1px solid #ffffff; 
+    border-radius: 5px; 
+}
+
+.popup-content {
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #520c0c;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: white;
+    z-index: 1000; 
+}
+
+.peeter {
+    margin-bottom: 23px;
+    margin-left: 1%;
+    height: 70px;
+    font-size: 48px; 
+}
+
+.Jaanus {
+    font-size: 18px; 
+}
+
+
+.yes {
+    padding: 8px;
+    background-color: #520c0c;
+    color: #f4f4f4;
+    text-align: center;
+    width: 256px;
+    margin-bottom: -300px;
+    position: fixed;
+    top: 790px;
+    left: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #ccc;
 }
