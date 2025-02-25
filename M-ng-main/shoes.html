@@ -148,10 +148,16 @@
                 displayCartItems();
             }
         }
+        
 
         function checkout() {
-            window.location.href = 'ostukorv.html';
-        }
+    if (cartCount === 9) {
+        window.location.href = 'ostukorv.html';
+    } else {
+        alert('Ostukorvi minekuks peab olema täpselt 9 eset!');
+    }
+}
+
     </script>
 </body>
 </html>
